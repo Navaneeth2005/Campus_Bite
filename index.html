@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Jumping Statement Example</title>
+</head>
+<body>
+  <h1>Break, Continue, and Return Examples</h1>
+  <p id="output"></p>
+
+  <script>
+    function breakexample() {
+      let result = 'Break Example:<br>';
+      for (let i = 0; i < 5; i++) {
+        if (i == 3) {
+          result += "Break stopped at i = " + i + "<br>";
+          break;
+        }
+        result += "i = " + i + "<br>";
+      }
+      return result;
+    }
+
+    function continueexample() {
+      let result = 'Continue Example:<br>';
+      for (let i = 0; i < 5; i++) {
+        if (i == 2) {
+          result += "Skipped i = " + i + "<br>";
+          continue;
+        }
+        result += "i = " + i + "<br>";
+      }
+      return result;
+    }
+
+    function returnexample() {
+      let result = 'Return Example:<br>';
+      for (let i = 0; i < 5; i++) {
+        if (i == 2) {
+          result += "Returned early at i = " + i + "<br>";
+          return result;
+        }
+        result += "i = " + i + "<br>";
+      }
+      return result;
+    }
+
+    // Call all three functions and display their outputs
+    let output = '';
+    output += breakexample();
+    output += '<br>';
+    output += continueexample();
+    output += '<br>';
+    output += returnexample();
+
+    document.getElementById("output").innerHTML = output;
+  </script>
+</body>
+</html>
