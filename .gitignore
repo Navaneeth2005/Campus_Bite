@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Dependencies
 node_modules/
 
@@ -6,7 +5,10 @@ node_modules/
 .env
 .env.local
 .env.production
+**/.env
+**/.env.local
 !.env.example
+!**/.env.example
 
 # Build outputs
 dist/
@@ -32,9 +34,6 @@ Thumbs.db
 *.swp
 
 # Misc
-coverage/
-=======
-# Ignore system and config files
 *.exe
 *.msi
 *.zip
@@ -48,15 +47,9 @@ coverage/
 *.pptx
 *.csv
 *.tgz
-*.txt
-*.ini
-node_modules/
-__pycache__/
-.DS_Store
-*.log
 
-# Ignore all parent directories
-../
-../../
-../../../
->>>>>>> 3389dd5af582773356dbfa9df2dc3001211aa2ad
+# Python cache
+__pycache__/
+
+# Other
+*.ini
