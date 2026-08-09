@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Dependencies
 node_modules/
 
@@ -32,3 +33,30 @@ Thumbs.db
 
 # Misc
 coverage/
+=======
+# Ignore system and config files
+*.exe
+*.msi
+*.zip
+*.rar
+*.mp4
+*.jpg
+*.jpeg
+*.png
+*.pdf
+*.docx
+*.pptx
+*.csv
+*.tgz
+*.txt
+*.ini
+node_modules/
+__pycache__/
+.DS_Store
+*.log
+
+# Ignore all parent directories
+../
+../../
+../../../
+>>>>>>> 3389dd5af582773356dbfa9df2dc3001211aa2ad
