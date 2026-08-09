@@ -1,0 +1,36 @@
+{
+  "name": "campus-bite-backend",
+  "version": "2.0.0",
+  "description": "Campus Bite - college food delivery REST API built with Node.js, Express and MongoDB",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "seed": "node scripts/seed.js",
+    "db:start": "powershell -NoProfile -Command \"Start-Process -WindowStyle Hidden -FilePath (Join-Path $env:LOCALAPPDATA 'MongoDB\\Server\\8.0\\bin\\mongod.exe') -ArgumentList '--dbpath', (Join-Path $env:LOCALAPPDATA 'MongoDB\\Data\\db'), '--bind_ip', '127.0.0.1', '--port', '27017'\""
+  },
+  "keywords": [
+    "nodejs",
+    "express",
+    "mongodb",
+    "mongoose",
+    "jwt",
+    "authentication",
+    "food-delivery"
+  ],
+  "author": "Campus Bite",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.6.1",
+    "express": "^4.21.2",
+    "express-validator": "^7.2.1",
+    "helmet": "^8.0.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.9.5"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
