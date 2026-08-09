@@ -1,6 +1,4 @@
 {
-  "name": "campus-bite-backend",
-<<<<<<< HEAD
   "version": "2.0.0",
   "description": "Campus Bite - college food delivery REST API built with Node.js, Express and MongoDB",
   "main": "src/server.js",
@@ -9,29 +7,15 @@
     "dev": "nodemon src/server.js",
     "seed": "node scripts/seed.js",
     "db:start": "powershell -NoProfile -Command \"Start-Process -WindowStyle Hidden -FilePath (Join-Path $env:LOCALAPPDATA 'MongoDB\\Server\\8.0\\bin\\mongod.exe') -ArgumentList '--dbpath', (Join-Path $env:LOCALAPPDATA 'MongoDB\\Data\\db'), '--bind_ip', '127.0.0.1', '--port', '27017'\""
-=======
-  "version": "1.0.0",
-  "description": "Campus Bite Food Ordering Backend with Authentication",
-  "main": "server.js",
-  "scripts": {
-    "start": "node server.js",
-    "dev": "nodemon server.js"
->>>>>>> 3389dd5af582773356dbfa9df2dc3001211aa2ad
   },
   "keywords": [
     "nodejs",
     "express",
-<<<<<<< HEAD
     "mongodb",
     "mongoose",
     "jwt",
     "authentication",
     "food-delivery"
-=======
-    "postgresql",
-    "jwt",
-    "authentication"
->>>>>>> 3389dd5af582773356dbfa9df2dc3001211aa2ad
   ],
   "author": "Campus Bite",
   "license": "ISC",
@@ -40,16 +24,10 @@
     "cors": "^2.8.5",
     "dotenv": "^16.6.1",
     "express": "^4.21.2",
-<<<<<<< HEAD
     "express-validator": "^7.2.1",
     "helmet": "^8.0.0",
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.9.5"
-=======
-    "jsonwebtoken": "^9.0.2",
-    "mysql2": "^3.15.2",
-    "pg": "^8.16.3"
->>>>>>> 3389dd5af582773356dbfa9df2dc3001211aa2ad
   },
   "devDependencies": {
     "nodemon": "^3.1.10"
